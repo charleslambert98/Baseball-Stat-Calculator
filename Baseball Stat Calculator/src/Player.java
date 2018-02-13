@@ -29,19 +29,19 @@ public class Player {
 	
 	public double totBaseCalc() {
 		double singles = hits - secondBase - thirdBase - hr;
-		totBase = (singles + (2*secondBase) + (3*thirdBase) + (4*hr)); //Calculates total bases achieved by player
+		totBase = (singles + (2*secondBase) + (3*thirdBase) + (4*hr)); //Calculates Total Bases achieved by the Player
 
 		return totBase;
 	}
 	
 	public double slgCalc() {
-		slg = (totBase)/ab;
+		slg = (totBase)/ab; //Calculates the Slugging Percentage of the player
 		
 		return slg;
 	}
 	
 	public double obsCalc() {
-		obs = obp + slg;
+		obs = obp + slg; //Calculates the sum of the On Base Percentage and the Slugging Percentage
 		
 		return obs;
 	}
